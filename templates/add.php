@@ -1,5 +1,5 @@
 <?php
-if($is_auth !== 1) {
+if(!isset($_SESSION['user'])) {
     header('Location: /login');
     exit;
 }
